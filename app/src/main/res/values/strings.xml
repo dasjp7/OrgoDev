@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">OrgoDev</string>
+    <string name="in_search_option_try_searching_for_popular_landmarks_near_your_address_like_hospitals_petrol_pumps_schools_buildings_etc">In search option try searching for popular landmarks near your address,like,hospitals,petrol pumps,schools,buildings etc.</string>
+    <string name="flat_no_building_name">Flat No./Building Name</string>
+    <string name="landmark">Landmark</string>
+    <string name="postal_code">Postal Code</string>
+    <string name="save_address">Save Address</string>
+    <string name="test">Test</string>
+    <string name="draw_open"> </string>
+    <string name="draw_close"> </string>
+</resources>

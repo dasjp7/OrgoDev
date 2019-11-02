@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_2"
+    tools:context=".CreateAccountActivity">
+
+    <LinearLayout
+        android:id="@+id/lin_sign_up_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <com.jpdas.orgodev.Fonts.PacificoRegular
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="80dp"
+            android:letterSpacing="0.1"
+            android:text="Orgo"
+            android:textColor="@color/black"
+            android:textSize="34sp" />
+
+        <com.jpdas.orgodev.Fonts.PacificoRegular
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:text="Hi SignUp"
+            android:textColor="@color/black"
+            android:textSize="28sp" />
+
+    </LinearLayout>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lin_sign_up_1"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginRight="40dp"
+        android:background="@color/white"
+        app:cardCornerRadius="7dp"
+        app:cardElevation="4dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <com.jpdas.orgodev.UtilsCustomizationUI.EditTextCustomizationBold
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_marginTop="4dp"
+                    android:background="@null"
+                    android:gravity="center"
+                    android:hint="Full Name"
+                    android:inputType="textPersonName"
+                    android:maxLength="40"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:textColor="#000"
+                    android:textColorHint="#979797"
+                    android:textCursorDrawable="@drawable/black_cursor_color"
+                    android:textSize="15sp" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="2dp"
+                    android:background="@color/black" />
+                <com.jpdas.orgodev.UtilsCustomizationUI.EditTextCustomizationBold
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_marginTop="4dp"
+                    android:background="@null"
+                    android:gravity="center"
+                    android:hint="Email Address"
+                    android:inputType="textEmailAddress"
+                    android:maxLength="50"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:textColor="#000"
+                    android:textColorHint="#979797"
+                    android:textCursorDrawable="@drawable/black_cursor_color"
+                    android:textSize="15sp" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="2dp"
+                    android:background="@color/black" />
+
+                <com.jpdas.orgodev.UtilsCustomizationUI.EditTextCustomizationBold
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_marginTop="4dp"
+                    android:background="@null"
+                    android:gravity="center"
+                    android:hint="Mobile Number"
+                    android:inputType="phone"
+                    android:maxLength="10"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:textColor="#000"
+                    android:textColorHint="#979797"
+                    android:textCursorDrawable="@drawable/black_cursor_color"
+                    android:textSize="15sp" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="2dp"
+                    android:background="@color/black" />
+
+                <com.jpdas.orgodev.UtilsCustomizationUI.HideAndSeekPassword
+                    android:id="@+id/password"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_marginTop="2dp"
+                    android:background="@null"
+                    android:gravity="center"
+                    android:hint="Password"
+                    android:inputType="textPassword"
+                    android:maxLength="20"
+                    android:maxLines="1"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp"
+                    android:singleLine="true"
+                    android:textColor="#000"
+                    android:textColorHint="#979797"
+                    android:textCursorDrawable="@drawable/black_cursor_color"
+                    android:textSize="15sp"
+                    app:drawable_hide="@drawable/hide1"
+                    app:drawable_show="@drawable/show"
+                    app:tint_color="#000" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="2dp"
+                    android:background="@color/black" />
+                <com.jpdas.orgodev.UtilsCustomizationUI.HideAndSeekPassword
+                    android:id="@+id/confirm_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_marginTop="2dp"
+                    android:background="@null"
+                    android:gravity="center"
+                    android:hint="Confirm Password"
+                    android:inputType="textPassword"
+                    android:maxLength="20"
+                    android:maxLines="1"
+                    android:layout_marginBottom="4dp"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp"
+                    android:singleLine="true"
+                    android:textColor="#000"
+                    android:textColorHint="#979797"
+                    android:textCursorDrawable="@drawable/black_cursor_color"
+                    android:textSize="15sp"
+                    app:drawable_hide="@drawable/hide1"
+                    app:drawable_show="@drawable/show"
+                    app:tint_color="#000" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+    <Button
+        android:id="@+id/sign_up_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/card_login"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:background="@drawable/log_sign_btn_bg"
+        android:gravity="center"
+        android:paddingBottom="8dp"
+        android:text="Resister"
+        android:textColor="@color/white"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sign_up_button"
+        android:gravity="center"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center">
+            <com.jpdas.orgodev.Fonts.WorkSansSemiBold
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Already have an account?"
+                android:textColor="@color/black"
+                android:textSize="12sp" />
+
+            <com.jpdas.orgodev.Fonts.WorkSansBold
+                android:id="@+id/login_screen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="  Login"
+                android:textColor="@color/green_1"
+                android:textSize="12sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>
